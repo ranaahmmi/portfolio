@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter application.">
+  <meta name="google-signin-client_id"203428839441-2e6ljhve9k5vvg0fbqmbiltd9hac2cua.apps.googleusercontent.com">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="bumpdbyahmmi">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+  <title>BUMP'D</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script src="/__/firebase/7.17.2/firebase-storage.js"></script>
+<script src="/__/firebase/7.17.2/firebase-auth.js"></script>
+<script src="/__/firebase/7.17.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+ var firebaseConfig = {
+    apiKey: "AIzaSyDcoVHxd0fmxHjamlrEPDrl4VYK1m-qI5w",
+    authDomain: "dump-d.firebaseapp.com",
+    databaseURL: "https://dump-d.firebaseio.com",
+    projectId: "dump-d",
+    storageBucket: "dump-d.appspot.com",
+    messagingSenderId: "203428839441",
+    appId: "1:203428839441:web:b6fca3ea4b781e1c3db1b0",
+    measurementId: "G-H6Y8T5WVLQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
